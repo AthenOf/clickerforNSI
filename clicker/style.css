@@ -1,0 +1,75 @@
+body{
+	background: rgb(36,0,0);
+	background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(238,16,16,1) 46%, rgba(52,4,4,1) 100%);
+}
+
+.clicker {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	outline: none;
+	border: none;
+	background-color:#FFFFFF;
+	transition: box-shadow 0.3s, background-color 0.3s;
+}
+
+.clicker {
+	border-radius: 50%;
+	width:200px;
+	height:200px;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	transition: width 0.3s, height 0.3s;
+}
+.clicker:hover {
+	width:225px;
+	height:225px;
+}
+.clicker:active {
+	transition: width 0.05s, height 0.05s;
+	width:200px;
+	height:200px;
+}
+
+.green-text{
+	font-size: 50px;
+	margin-left: 50px;
+	color: #ffffff;
+}
+
+.button{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	outline: none;
+	border: none;
+	background-color:#FFFFFF;
+	transition: box-shadow 0.3s, background-color 0.3s;
+}
+.button:hover, .clicker:hover{
+	box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3), 0 17px 17px 0 rgba(15, 15, 15, 0.15);
+}
+.button:active, .clicker:active{
+	transition: box-shadow 0.15s, background-color 0.1s;
+	box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3), 0 20px 20px 0 rgba(0, 0, 0, 0.15);
+	background-color:#F0F0F0;
+}
+
+.button{
+	position: absolute;
+	left: 87%;
+	transform: translate(-50%, -50%);
+	width: 200;
+	height: 50;
+}
+.button:disabled{
+	background-color: #B3B3B3;
+}
+
+#b1{top:22%}
+#b2{top:32%}
+#b3{top:42%}
+#b4{top:52%}
